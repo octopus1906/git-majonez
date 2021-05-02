@@ -1,7 +1,7 @@
  2141  mkdir git-majonez
  2142  cd git-majonez/
  2143  git init
- 2145  vim main.cpp
+ 2145  touch main.cpp
  2153  git add main.cpp 
  2154  git commit -m "Initial commit"
  2156  vim main.cpp 
@@ -10,7 +10,7 @@
  2163  git remote add origin https://github.com/octopus1906/git-majonez.git
  2165  git push -u origin master
  2169  git checkout -b cs
- 2172  git rebase -i 1d1090886
+ 2172  git reset --hard HEAD~1 
  2174  git push origin cs
  2178  vim main.cpp 
  2179  git add main.cpp 
